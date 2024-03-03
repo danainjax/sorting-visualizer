@@ -6,7 +6,7 @@
 }
 
 .array-bars {
-  width: 20px;
+  width: 5px;
   background-color: coral;
   transition: height 0.3s ease;
 }
