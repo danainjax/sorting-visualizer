@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './SortingVisualizer.css';
 
 const SortingVisualizer = () => {
   const generateRandomNumbers = () => {
@@ -20,10 +21,17 @@ const SortingVisualizer = () => {
         Generate New Numbers
       </button>
       <p>Array Length: {randomNumbers.length}</p>
-
-      {randomNumbers.map((number, index) => (
-        <div key={index}>{number}</div>
-      ))}
+      <div className='array-container'>
+        {randomNumbers.map((number, index) => (
+          <div
+            className='array-bars'
+            key={index}
+            style={{ height: `${number}px` }}
+          >
+            {number}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

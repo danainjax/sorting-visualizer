@@ -1,0 +1,12 @@
+.array-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.array-bars {
+  width: 20px;
+  background-color: coral;
+  transition: height 0.3s ease;
+}
